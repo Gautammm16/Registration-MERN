@@ -1,0 +1,16 @@
+GET http://localhost:3000/api/getusers
+###
+
+POST http://localhost:3000/api/createuser
+Content-Type: application/json
+
+{
+    "email":"wtf@gmail.com",
+    "name":"wtf16",
+    "password":"test"
+}
+
+###
+
+DELETE http://localhost:3000/api/deleteuser/66fc0741489c8cee92dbb249
+Content-Type: application/json
