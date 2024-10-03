@@ -11,12 +11,16 @@ const Login = () => {
         e.preventDefault();
         axios.post("http://localhost:3000/api/login",{username,password})
         .then(result=>{console.log(result)
-            if(result.data=="Success"){
+            if(result.data=="success"){
                 navigate('/home')
             }
         })
         .catch(e=>console.log("theres some error",e));
+
+        
     }
+
+    
   return (
     <div>
       <h1>Hello world</h1>
